@@ -102,8 +102,24 @@ Y abre en tu navegador:
 
 ## ☁️ Despliegue en Vercel
 
-La aplicación está lista para desplegarse como sitio estático sin configuración adicional:
-```bash
-vercel --prod
-```
-O conectando el repositorio de GitHub en el panel de Vercel.
+### Opción A: Reclamar el Despliegue Ya Activo en Vivo
+La aplicación ya ha sido construida y desplegada en la nube de Vercel:
+- **URL activa en vivo:** [https://speedy-sapphire-vuykgdq.tmp.now](https://speedy-sapphire-vuykgdq.tmp.now)
+- **Enlace directo para vincular a tu cuenta de Vercel (Claim):**  
+  [https://vercel.com/claim-deployment?code=c86b3db4-afbf-4408-a2e0-d12d42dfc511](https://vercel.com/claim-deployment?code=c86b3db4-afbf-4408-a2e0-d12d42dfc511)  
+  *(Al pulsar en el enlace de reclamo con tu sesión de Vercel abierta, se asocia automáticamente a tu cuenta y obtendrás tu dominio personalizado `.vercel.app` permanente).*
+
+---
+
+### Opción B: Integración Continua con GitHub
+1. Entra en [github.com/new](https://github.com/new) y crea el repositorio vacío llamado:
+   `olivia-lengua-4-tema2`
+2. Sube los cambios con:
+   ```powershell
+   cd c:\99_CODIGOFUENTE\Personal\Olivia_4\Lengua_Tema2
+   git push -u origin main
+   ```
+3. En [vercel.com/new](https://vercel.com/new):
+   - Selecciona **"Import Project"** desde tu cuenta de GitHub (`franggpt-code/olivia-lengua-4-tema2`).
+   - Pulsa **"Deploy"** (los ajustes ya están configurados en `vercel.json` y `package.json`).
+
