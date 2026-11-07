@@ -1,0 +1,25 @@
+{
+  "name": "olivia-lengua-4-tema2",
+  "version": "1.0.0",
+  "description": "Aplicación interactiva y pedagógica para preparar el examen del Tema 2 de Lengua Castellana y Literatura de 4º de Primaria (Proyecto CLAVES / Grazalema-Santillana)",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000"
+  },
+  "keywords": [
+    "lengua",
+    "primaria",
+    "4-primaria",
+    "campo-lexico",
+    "campo-semantico",
+    "palabras-agudas",
+    "tilde",
+    "pronombres-personales",
+    "texto-instructivo",
+    "nota-de-agradecimiento",
+    "santillana",
+    "claves"
+  ],
+  "author": "Fran Guerrero",
+  "license": "MIT"
+}

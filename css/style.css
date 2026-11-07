@@ -1,0 +1,227 @@
+/* =============================================================================
+   ESTILOS VISUALES · LENGUA 4.º DE PRIMARIA · TEMA 2 · OLIVIA
+   Diseño pedagógico, alegre, adaptado a iPad, tablets táctiles y ordenadores
+   ============================================================================= */
+
+:root {
+  --primary: #0284c7;        /* Azul cielo intenso educativo */
+  --primary-dark: #0369a1;
+  --secondary: #8b5cf6;      /* Violeta mágico */
+  --accent: #f59e0b;         /* Ámbar / Oro */
+  --success: #10b981;        /* Esmeralda acierto */
+  --danger: #ef4444;         /* Rojo corrección */
+  --text-main: #1e293b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+  background: #fdfaf6;
+  background: linear-gradient(135deg, #f0f9ff 0%, #fdf4ff 50%, #f0fdf4 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tipografía */
+.font-display { font-family: 'Outfit', -apple-system, sans-serif; letter-spacing: -0.02em; }
+.font-sans { font-family: 'Nunito', -apple-system, sans-serif; }
+
+/* Contenedores y Tarjetas */
+.card-playful {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  border: 2px solid #f1f5f9;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-playful:hover {
+  border-color: #e2e8f0;
+}
+
+/* Botones Bouncy Táctiles para Niños */
+.btn-bouncy {
+  position: relative;
+  transition: all 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  font-weight: 800;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.14);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.btn-bouncy:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.btn-bouncy:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Chips y Píldoras Interactivas */
+.pill-option {
+  border: 2px solid #e2e8f0;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0.85rem 1.2rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.pill-option:hover {
+  border-color: #93c5fd;
+  background-color: #eff6ff;
+  transform: translateY(-2px);
+}
+
+.pill-option.selected {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+  color: #1e40af;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+.pill-option.correct {
+  border-color: #10b981 !important;
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.pill-option.incorrect {
+  border-color: #ef4444 !important;
+  background-color: #fee2e2 !important;
+  color: #991b1b !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+}
+
+/* Badges de Dificultad y Temas */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Sílaba tónica destacada */
+.syllable-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.15rem;
+  border-radius: 0.75rem;
+  background-color: #f8fafc;
+  border: 2px solid #cbd5e1;
+  font-size: 1.25rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.syllable-box:hover {
+  background-color: #e0f2fe;
+  border-color: #38bdf8;
+  transform: scale(1.05);
+}
+
+.syllable-box.tonic {
+  background: linear-gradient(135deg, #fef08a 0%, #fde047 100%);
+  border-color: #eab308;
+  color: #713f12;
+  box-shadow: 0 4px 10px rgba(234, 179, 8, 0.3);
+}
+
+/* Barra de Progreso Suave */
+.progress-bar-glow {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+/* Animaciones */
+@keyframes bounceSmall {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounceSmall 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.animate-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Estilos de la Tarjeta Postal de Agradecimiento */
+.postcard-wrapper {
+  background: #ffffff;
+  border: 4px solid #fed7aa;
+  border-radius: 1.5rem;
+  position: relative;
+  background-image: radial-gradient(#fde68a 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.postcard-stamp {
+  width: 70px;
+  height: 85px;
+  border: 2px dashed #f59e0b;
+  background: #fef3c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(4deg);
+}
+
+/* Estilos de Impresión */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  .card-playful {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+}
+
+.print-only {
+  display: none;
+}
