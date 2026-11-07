@@ -40,6 +40,33 @@ body {
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* =============================================================================
+   CABECERA FIJA Y SÓLIDA
+   ============================================================================= */
+header.app-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+  box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04) !important;
+  width: 100% !important;
+}
+
+.mobile-subnav {
+  background-color: #f8fafc !important;
+  background: #f8fafc !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+main.app-main {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
 .card-playful:hover {
   border-color: #e2e8f0;
 }

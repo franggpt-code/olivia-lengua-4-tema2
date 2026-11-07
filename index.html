@@ -24,7 +24,7 @@
   <!-- =========================================================================
        CABECERA PRINCIPAL (NAVBAR)
        ========================================================================= -->
-  <header class="no-print sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+  <header class="app-header no-print sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
       
       <!-- Logo y Marca -->
@@ -74,7 +74,7 @@
     </div>
 
     <!-- Barra de Navegación Móvil Inferior -->
-    <div class="md:hidden flex overflow-x-auto gap-2 px-4 py-2 border-t border-slate-100 bg-slate-50/90 text-xs font-bold scrollbar-none">
+    <div class="mobile-subnav md:hidden flex overflow-x-auto gap-2 px-4 py-2.5 border-t border-slate-200 bg-slate-50 text-xs font-bold scrollbar-none">
       <button onclick="app.navigate('home')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-white border border-slate-200 shadow-xs">🏠 Inicio</button>
       <button onclick="app.navigate('misiones')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-white border border-slate-200 shadow-xs">🎒 Misiones</button>
       <button onclick="app.navigate('examen')" class="whitespace-nowrap px-3 py-1 rounded-lg bg-white border border-slate-200 shadow-xs">🏆 Examen</button>
@@ -88,7 +88,7 @@
   <!-- =========================================================================
        CONTENEDOR DINÁMICO DE VISTAS (SPA)
        ========================================================================= -->
-  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-6">
+  <main class="app-main flex-1 max-w-6xl w-full mx-auto px-4 py-6">
 
     <!-- ---------------------------------------------------------------------
          VISTA 1: INICIO (HOME)
