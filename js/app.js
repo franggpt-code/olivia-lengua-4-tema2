@@ -47,17 +47,15 @@ class App {
     views.forEach(v => {
       const el = document.getElementById(`view-${v}`);
       if (el) el.classList.add('hidden');
-      const navBtn = document.getElementById(`nav-${v}`);
-      if (navBtn) {
-        navBtn.classList.remove('text-sky-600', 'bg-sky-50');
-      }
+      const navBtns = document.querySelectorAll(`.nav-tab-btn[data-target="${v}"]`);
+      navBtns.forEach(btn => btn.classList.remove('active'));
     });
 
     const activeView = document.getElementById(`view-${viewId}`);
     if (activeView) activeView.classList.remove('hidden');
 
-    const activeNav = document.getElementById(`nav-${viewId}`);
-    if (activeNav) activeNav.classList.add('text-sky-600', 'bg-sky-50');
+    const activeNavBtns = document.querySelectorAll(`.nav-tab-btn[data-target="${viewId}"]`);
+    activeNavBtns.forEach(btn => btn.classList.add('active'));
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
