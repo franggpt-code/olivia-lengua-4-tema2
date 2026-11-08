@@ -119,29 +119,30 @@
     <section id="view-home" class="space-y-8">
       
       <!-- Banner de Bienvenida -->
-      <div class="card-playful p-6 sm:p-8 bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 text-white relative overflow-hidden">
+      <div class="hero-banner p-6 sm:p-8 relative overflow-hidden">
         <div class="relative z-10 max-w-2xl">
-          <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4">
-            <span>✨ ¡Hola, Olivia!</span> · <span>4.º de Primaria</span>
+          <div class="hero-badge mb-3">
+            <span>✍️</span>
+            <span>¡Hola, Olivia! · Lengua 4.º Primaria (Tema 2)</span>
           </div>
-          <h2 class="text-3xl sm:text-4xl font-black font-display tracking-tight leading-tight mb-3">
-            ¡Conquista el Tema 2 de Lengua con un 10!
+          <h2 class="text-2xl sm:text-4xl font-black font-display tracking-tight leading-tight mb-2 text-white">
+            Campo Léxico, Palabras Agudas y Pronombres
           </h2>
-          <p class="text-sky-100 text-base sm:text-lg font-medium leading-relaxed mb-6">
-            Entrena todos los conceptos del examen oficial de Santillana con ejercicios nuevos, ejemplos divertidos, explicaciones paso a paso y minijuegos rápidos.
+          <p class="hero-p mb-6">
+            Entrena todos los conceptos del examen de Santillana con ejercicios nuevos, textos instructivos, explicaciones paso a paso y minijuegos rápidos.
           </p>
-          <div class="flex flex-wrap gap-3">
-            <button onclick="app.navigate('misiones')" class="btn-bouncy px-6 py-3 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-black text-base shadow-lg flex items-center gap-2">
-              <span>🚀 Comenzar Misiones</span>
+          <div class="flex flex-wrap items-center gap-3">
+            <button onclick="app.navigate('misiones')" class="btn-bouncy hero-btn-primary px-6 py-3 rounded-2xl text-sm">
+              <span>Comenzar Misiones</span> <span>🚀</span>
             </button>
-            <button onclick="app.navigate('examen')" class="btn-bouncy px-6 py-3 rounded-2xl bg-white/20 hover:bg-white/30 text-white font-bold text-base backdrop-blur-md border border-white/30 flex items-center gap-2">
-              <span>🏆 Simulacro de Examen</span>
+            <button onclick="app.navigate('examen')" class="btn-bouncy hero-btn-secondary px-6 py-3 rounded-2xl text-sm">
+              <span>Simulador de Examen</span> <span>🏆</span>
             </button>
           </div>
         </div>
 
         <!-- Decoración de fondo -->
-        <div class="absolute -right-8 -bottom-8 text-9xl opacity-20 pointer-events-none select-none">
+        <div class="absolute -right-8 -bottom-8 text-9xl text-white/10 select-none pointer-events-none">
           📖
         </div>
       </div>
@@ -211,13 +212,13 @@
               <span class="text-3xl">🏆</span>
               <span class="bg-amber-200 text-amber-900 font-black text-xs px-2.5 py-1 rounded-full uppercase">Puntuable 0-10</span>
             </div>
-            <h3 class="text-xl font-black text-slate-900 mb-2">Simulacro Examen Oficial</h3>
+            <h3 class="text-xl font-black text-slate-900 mb-2">Simulador de Examen</h3>
             <p class="text-slate-600 text-sm leading-relaxed mb-4">
               9 preguntas organizadas exactamente igual que la prueba de Santillana. Incluye Modelo B y Modelo A con corrección inmediata.
             </p>
           </div>
           <button onclick="app.navigate('examen')" class="btn-bouncy w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-black text-sm">
-            Hacer Simulacro de Examen
+            Hacer Simulador de Examen
           </button>
         </div>
 
