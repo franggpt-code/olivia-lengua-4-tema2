@@ -1211,7 +1211,7 @@ class App {
   }
 
   // ---------------------------------------------------------------------------
-  // CHULETA DE ORO IMPRIMIBLE
+  // ESQUEMAS DE ORO IMPRIMIBLES
   // ---------------------------------------------------------------------------
   renderChuleta() {
     const container = document.getElementById('chuleta-container');

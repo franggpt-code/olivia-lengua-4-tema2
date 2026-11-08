@@ -16,7 +16,7 @@ const TEMA_2_DATA = {
   },
 
   // ---------------------------------------------------------------------------
-  // FICHAS DE ESTUDIO VISUAL (CHULETA DE ORO IMPRIMIBLE)
+  // FICHAS DE ESTUDIO VISUAL (ESQUEMAS DE ORO IMPRIMIBLES)
   // ---------------------------------------------------------------------------
   resumenOro: [
     {

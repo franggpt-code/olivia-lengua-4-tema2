@@ -67,7 +67,7 @@ El entrenador está **basado conceptualmente en las pruebas oficiales de evaluac
 
 ---
 
-### 5. 📖 Chuleta de Oro Imprimible
+### 5. 📖 Esquemas de Oro Imprimibles
 - Resumen visual con las definiciones exactas, reglas mnemotécnicas, tablas y trucos para repasar antes del control.
 - Maquetada para imprimir en papel A4 o guardar en PDF con `Ctrl + P`.
 
